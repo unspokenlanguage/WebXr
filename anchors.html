@@ -34,7 +34,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-        <summary>Anchors</summary>
+        <summary>Anchors 2</summary>
         <p>
           This sample demonstrates the use of anchors to place virtual objects in stable, real-world locations.
           <a class="back" href="./">Back</a>
@@ -70,7 +70,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
-      let solarSystem = new Gltf2Node({url: 'media/gltf/world_war/tank.gltf'});
+      let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
       // The solar system is big (citation needed). Scale it down so that users
       // can move around the planets more easily.
       solarSystem.scale = [0.1, 0.1, 0.1];
@@ -194,7 +194,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
         anchor.context = {};
 
-        let flower = new Gltf2Node({url: 'media/gltf/world_war/war_landscape.gltf'});
+        let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
         scene.addNode(flower);
         anchor.context.sceneObject = flower;
         flower.anchor = anchor;
